@@ -1,0 +1,132 @@
+/* =========================================
+   home.css - Styles specific to home.html
+   ========================================= */
+
+.hero {
+  background-color: var(--green-dark);
+  color: var(--white);
+  padding: 3.5rem 1.25rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.badge-tag {
+  display: inline-block;
+  background-color: var(--green-light);
+  color: var(--green-dark);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 2.1rem;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  color: var(--green-pale);
+  margin-bottom: 1.75rem;
+}
+
+.hero-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.85rem;
+}
+
+/* Stats Section */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.stat-card {
+  background-color: var(--white);
+  border: 1px solid var(--border-green);
+  border-top: 4px solid var(--green-primary);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stat-card h3 {
+  font-size: 2rem;
+  color: var(--green-primary);
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Services Cards Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.card-icon {
+  display: inline-block;
+  background-color: var(--green-light);
+  color: var(--green-dark);
+  font-weight: 700;
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}
+
+.card p {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.card-link {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--green-primary);
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+/* Partner Banner */
+.info-banner {
+  background-color: var(--white);
+  border: 2px solid var(--green-primary);
+  border-radius: 8px;
+  padding: 1.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.info-banner-text {
+  max-width: 700px;
+}
+
+.info-banner-text h3 {
+  color: var(--green-dark);
+  margin-bottom: 0.4rem;
+}
+
+.info-banner-text p {
+  color: var(--text-muted);
+}

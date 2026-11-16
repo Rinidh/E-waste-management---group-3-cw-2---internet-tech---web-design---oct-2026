@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kampala E-Waste Management System | Book a Collection Truck</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/booking.css">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="header-container">
+      <a href="home.html" class="logo-brand">
+        <!-- University Shield Logo -->
+        <img src="Victoria Logo.png" alt="Victoria University Kampala Logo" class="logo-img">
+        <div class="logo-text">
+          <h1>Kampala E-Waste</h1>
+          <span>Management System</span>
+        </div>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="booking.html" class="active" aria-current="page">Booking</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="learning_hub.html">Learning Hub</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="booking.html" class="nav-cta">Book a Truck</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <span class="badge-tag">Bulk &amp; Scheduled E-Waste Pickup</span>
+      <h1>We are reliable and Trusted Partners in Waste Collection for Your Business or household</h1>
+      <p>
+        Are you a factory, hotel, supermarket, institution,
+        construction company, household or a large electronic waste generator.
+        Book a collection truck and let us handle your waste
+        responsibly and efficiently.
+      </p>
+      <div class="hero-btns">
+        <a href="#booking" class="btn btn-primary">
+          BOOK A COLLECTION TRUCK
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="grid-container" id="services">
+      <article class="card">
+        <div class="card-icon">🚛</div>
+        <h3>Flexible Trucks</h3>
+        <p>Different truck capacities for your waste needs.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">📅</div>
+        <h3>Scheduled Pickup</h3>
+        <p>Choose a convenient collection date.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">♻</div>
+        <h3>Responsible Disposal</h3>
+        <p>Support cleaner and sustainable communities.</p>
+      </article>
+    </section>
+
+    <section id="booking">
+      <div class="section-header">
+        <h2>Book Your Waste Collection Truck</h2>
+        <p>Complete the form below to request a collection service.</p>
+      </div>
+
+      <div class="card">
+        <form id="bookingForm">
+
+          <h3 class="form-title">1. Business Information</h3>
+
+          <div class="form-grid">
+
+            <div class="form-group">
+              <label for="business">Business / Organisation Name</label>
+              <input type="text" id="business" name="business" required placeholder="Enter organisation name">
+            </div>
+
+            <div class="form-group">
+              <label for="category">Business Category</label>
+              <select id="category" name="category" required>
+                <option value="">Select category</option>
+                <option>Manufacturing / Factory</option>
+                <option>Hotel / Restaurant</option>
+                <option>Supermarket / Retail</option>
+                <option>Construction Company</option>
+                <option>Hospital / Institution</option>
+                <option>School / University</option>
+                <option>Market / Shopping Centre</option>
+                <option>Homes/ Appartments</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact">Contact Person</label>
+              <input type="text" id="contact" name="contact" required placeholder="Full name">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required placeholder="+256 7XX XXX XXX">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required placeholder="example@business.com">
+            </div>
+
+            <div class="form-group">
+              <label for="location">Business Location</label>
+              <input type="text" id="location" name="location" required placeholder="Division / Area">
+            </div>
+
+            <h3 class="form-title form-group full">
+              2. Waste Collection Details
+            </h3>
+
+            <div class="form-group">
+              <label for="waste">Type of Waste</label>
+              <select id="waste" name="waste" required>
+                <option value="">Select waste type</option>
+                <option>ICT Equipment and Telecommunication devices</option>
+                <option>Large Household and Commrecial Appliances</option>
+                <option>Small Household Appliances and Kitchen Gadgets</option>
+                <option>Screens and Monitors</option>
+                <option>Computer Electronics</option>
+                <option>Lighting Equipment</option>
+                <option>Medical and Laboratory Electronic Equipment</option>
+                <option>Other - Specify in notes</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="volume">Estimated Waste Volume</label>
+              <select id="volume" name="volume" required>
+                <option value="">Select estimated volume</option>
+                <option>Less than 1 tonne</option>
+                <option>1 - 3 tonnes</option>
+                <option>4 - 5 tonnes</option>
+                <option>6 - 10 tonnes</option>
+                <option>11 - 20 tonnes</option>
+                <option>More than 20 tonnes</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="truck">Preferred Truck Size</label>
+              <select id="truck" name="truck" required>
+                <option value="">Select truck size</option>
+                <option>Small Collection Truck</option>
+                <option>Medium Collection Truck</option>
+                <option>Large Collection Truck</option>
+                <option>Heavy-Duty Truck</option>
+                <option>Recommend a suitable truck</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="frequency">Collection Frequency</label>
+              <select id="frequency" name="frequency" required>
+                <option value="">Select frequency</option>
+                <option>One-time Collection</option>
+                <option>Daily Collection</option>
+                <option>Weekly Collection</option>
+                <option>Twice a Week</option>
+                <option>Monthly Collection</option>
+              </select>
+            </div>
+
+            <h3 class="form-title form-group full">
+              3. Collection Schedule
+            </h3>
+
+            <div class="form-group">
+              <label for="date">Preferred Collection Date</label>
+              <input type="date" name="date" id="date" required>
+            </div>
+
+            <div class="form-group">
+              <label for="time">Preferred Collection Time</label>
+              <select id="time" name="time" required>
+                <option value="">Select time</option>
+                <option>Morning (7 AM - 10 AM)</option>
+                <option>Midday (10 AM - 2 PM)</option>
+                <option>Afternoon (2 PM - 5 PM)</option>
+                <option>Flexible</option>
+              </select>
+            </div>
+
+            <div class="form-group full">
+              <label for="address">Exact Collection Address</label>
+              <input type="text" id="address" name="address" required
+                placeholder="Street, building, plot number and nearby landmark">
+            </div>
+
+            <div class="form-group full">
+              <label for="notes">Special Instructions / Additional Information</label>
+              <textarea id="notes" name="notes"
+                placeholder="Describe access conditions, loading requirements, waste packaging, special handling needs, etc."></textarea>
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            SUBMIT TRUCK BOOKING REQUEST
+          </button>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Kampala E-Waste System</h4>
+        <p>A group web project, developed by Group 3 students of Internet Technology &amp; Web design module at Victoria
+          University, addressing urban electronic waste challenges</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="home.html">Home (Project Intro)</a></li>
+          <li><a href="booking.html">Booking Area</a></li>
+          <li><a href="locations.html">Locations Table</a></li>
+          <li><a href="learning_hub.html">Learning Hub</a></li>
+          <li><a href="about.html">About &amp; Contacts</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Project Team</h4>
+        <p>
+          Built with &hearts; by Group 3 - Internet Technology &amp; Web Design Coursework - October 2026 cohort
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Kampala E-Waste Management System</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+/* =========================================
+   learning_hub.css - Styles specific to learning_hub.html
+   ========================================= */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background-color: var(--green-dark);
+  color: var(--white);
+  padding: 0.6rem 1rem;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+/* Sections & Grids */
+.container {
+  margin-bottom: 2.25rem;
+}
+
+.container p {
+  margin-bottom: 0.75rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.hazard-list {
+  margin: 1rem 0 0 1.25rem;
+}
+
+.hazard-list li {
+  margin-bottom: 0.5rem;
+}
+
+article.card {
+  margin-bottom: 1.2rem;
+}
+
+article.card:last-child {
+  margin-bottom: 0;
+}
